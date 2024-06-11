@@ -1,0 +1,18 @@
+[package]
+name = "ks-placeholder"
+version = "0.1.0"
+edition = "2021"
+authors = ["KunoiSayami <i@leanhe.dev>"]
+description = "A macro help user create pesudo source file"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/KunoiSayami/ks-placeholder"
+
+
+[dependencies]
+quote = "1"
+syn = { version = "2", features = ["full", "extra-traits"] }
+proc-macro2 = { version = "1.0" }
+
+[lib]
+proc-macro = true
+
